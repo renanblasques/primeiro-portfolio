@@ -1,0 +1,73 @@
+/* normalize.css */
+
+/* 1. Garante que o box-sizing seja border-box para todos */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove margens padrão */
+  body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+  
+  /* 3. Ajusta a altura mínima da body */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  /* 4. Tira list-style de listas */
+  ul, ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* 5. Links sem sublinhado, mas mantendo acessibilidade */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 6. Imagens e mídias responsivas */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inputs e botões herdando fontes */
+  input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+  }
+  
+  /* 8. Botões sem borda ou fundo nativo */
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* 9. Corrige a busca no Safari */
+  input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  /* 10. Corrige a falta de estilo consistente em tables */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* 11. Remover animações se o usuário preferir movimento reduzido */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
